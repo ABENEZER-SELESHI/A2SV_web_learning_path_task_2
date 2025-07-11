@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>TodoList Web</title>
+</head>
+<body>
+    <h1 style="position: relative; justify-self: center">My Todo List</h1>
+    <div class="container">
+
+        <h2>Available Tasks</h2>
+        <div id="taskListDisplay" class="taskListDisplay"></div>
+
+        <h2>Completed Tasks</h2>
+        <div id="completedTaskListDisplay" class="taskListDisplay"></div>
+        
+        <div class="control">
+            <input type="text" id='newTask' placeholder="Enter new task" class="new-input">
+            <button onclick="addTask()" class="btn">Add Task</button>
+        </div>
+
+    </div>
+
+
+    <script defer src="../dist/todo.js"></script>
+</body>
+</html>
